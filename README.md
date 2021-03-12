@@ -46,7 +46,6 @@ automl_config = AutoMLConfig(
     primary_metric='accuracy',
     training_data=data,
     label_column_name='y',
-   # compute_target=compute_target,
     n_cross_validations=4)
 
 First it checked quality of data (If there is any missing features or unbalance data) then it has generated 41 models and gets the best model having highest accuracy. 
